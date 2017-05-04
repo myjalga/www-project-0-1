@@ -1,0 +1,36 @@
+
+
+$bgColor: #363636;
+$textColor: #C4CED7;
+
+.mainLeftNavigation {
+    color: $textColor;
+    background-color: $bgColor;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    > ul {
+        padding: 0;
+        margin: 0;
+        display: block;
+        list-style: outside none none;
+        background-color: $bgColor;
+        width: 100%;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    > ul li {
+        cursor: pointer;
+        padding: 10px 20px 10px 20px;
+        font-size: 12px;
+        float: left;
+        background-color: $bgColor;
+    }
+
+    > ul li:hover {
+        background-color: #595D69;
+    }
+}

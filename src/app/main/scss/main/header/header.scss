@@ -1,0 +1,66 @@
+
+$headerBgColor: #76b852;
+$headerName: #FFF;
+$accountColor: #FFF;
+
+.mainHeaderContainer {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.mainHeaderClass {
+    background-color: $headerBgColor;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    left: 0px;
+}
+
+.mainHeaderName {
+    font-size: 18px;
+    color: $headerName;
+    padding: 0;
+}
+
+.mainHeaderTopNavigation {
+    right: 0px;
+    float: right;
+}
+
+.mainHeaderTopNavigationAccount {   
+
+    > div {
+        display: none;
+    }
+
+    > a {
+        cursor: pointer;
+        color: $headerName;
+        padding: 5px 10px 5px 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    
+}
+
+.mainHeaderTopNavigationAccount:hover {
+    > a {
+        text-decoration: none;
+        background-color: $accountColor;
+        color: #000
+    }
+
+    > div {
+        position: absolute;
+        display: block;
+        z-index: 99;
+        height: 100px;
+        width: 200px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #d3d3d3;
+        right: 19px;
+    }
+
+}

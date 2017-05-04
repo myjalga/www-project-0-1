@@ -1,0 +1,16 @@
+
+<html>
+    <head>Test Navigator</head>
+    <body>
+        <script>
+            getLocation();
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.watchPosition(function (position) {
+                        console.log(position.coords.latitude, position.coords.longitude)
+                    });
+                }
+            }
+        </script>
+    </body>
+</html>
